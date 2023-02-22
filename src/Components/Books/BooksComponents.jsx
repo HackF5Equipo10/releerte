@@ -31,7 +31,7 @@ function BooksComponents({imagen, titulo, donación, autores }) {
                     {autores}
                     </Typography>
                     <Typography gutterBottom variant="p" component="div">
-                    {donación}€
+                    Donación: {donación}€
                     </Typography>
                 </CardContent>
                 <CardActions>
