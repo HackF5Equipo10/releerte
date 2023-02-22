@@ -1,54 +1,47 @@
-import React, { useEffect, useState } from 'react'
-import { getBooks } from '../../services/functions';
+import React from 'react'
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import Stack from '@mui/material/Stack';
 
-function BooksComponents() {
-    const [books, setBooks]= useState([]);
-
-    const getAllbooks =async() =>{
-        const listOfBooks = await getBooks();
-        setBooks(listOfBooks);
-        console.log(books);
-    }
-    useEffect(() => {
-        getAllbooks();
-      }, []);
+function BooksComponents({imagen, titulo, donación, autores }) {
   return (
     <>
-       { books.map(book => (
-        
-            <div key={book.id}>
-
-            <Card sx={{ maxWidth: 345 }}>
+    <Grid item mb={4} xs={12} md={4} sm={6} spacing={2}>
+            <Card sx={{ 
+                maxWidth: '250px',
+                 maxHeight: '600px',
+                 ml: '20px'
+                 }}>
                 <CardMedia
                     component="img"
-                    alt={book.title}
-                    height="140"
-                    image={book.imagen}
+                    alt={titulo}
+                    height="380"
+                    image={imagen}
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                    {book.titulo}
+                    <Typography gutterBottom variant="p" component="div">
+                    {titulo}
                     </Typography>
-                    <Typography gutterBottom variant="h5" component="div">
-                    {book.autores}
+                    <Typography gutterBottom variant="p" component="div">
+                    {autores}
+                    </Typography>
+                    <Typography gutterBottom variant="p" component="div">
+                    {donación}€
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="small">VER FICHA</Button>
-                    <Button size="small">Agregar Carrito</Button>
+                    <Stack spacing={2} width='100%' centered >
+                        <Button color="info" size="large" variant="contained">VER FICHA</Button>
+                        <Button color="info" size="large" variant="contained">AÑADIR A LA CESTA</Button>
+                    </Stack>
                 </CardActions>
                 </Card>
-            </div>
-  ))
-};
-
-
+       </Grid>
     </>
   )
 }
