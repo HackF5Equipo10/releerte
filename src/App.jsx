@@ -7,15 +7,15 @@ import Layout from './Components/Layout'
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Routes>
         <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/book-detail" element={<DetailBook />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/book-cards" element={<BookCards/>} />
       </Route>
     </Routes>
-
     </div>
   );
 }
