@@ -2,7 +2,7 @@
 ![ReLeerTe](/logoReleerte.png)
 
 
-## "Abriendo mundos a través de la educación: Libros que cambian vidas
+## "Abriendo mundos a través de la educación: Libros que cambian vidas"
 
 ## Nuestros volares 
 
