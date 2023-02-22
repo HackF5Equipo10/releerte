@@ -1,5 +1,5 @@
 # ReLeerTe 
-![ReLeerTe](/path/to/logoReleerte.png)
+![ReLeerTe](/logoReleerte.png)
 
 
 ## "Abriendo mundos a través de la educación: Libros que cambian vidas
