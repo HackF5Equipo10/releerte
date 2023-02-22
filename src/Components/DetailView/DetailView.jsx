@@ -7,60 +7,57 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import Stack from '@mui/material/Stack';
+import Grid from '@mui/material/Grid';
 
-function DetailedView() {
-    const [book, setBook]= useState([]);
 
-    const getbook =async() =>{
-        const book = await getBooks();
-        setBook(book);
-        console.log(book);
-    }
-    useEffect(() => {
-        getbook();
-      }, []);
+function DetailedView({imagen, isbn, titulo, autores, editorial, donación, genero, descripción}) {
+
+
   return (
     <>
-        { book.map(book => (
-      
-             <div key={book.id}>
-             <Card sx={{ maxWidth: 345 }}>
-                 <CardMedia
-                     component="img"
-                     alt={book.title}
-                     height="140"
-                     image={book.imagen}
-                 />
-                 <CardContent>
-                     <Typography gutterBottom variant="h5" component="div">
-                     {book.isbn}
-                     </Typography>
-                     <Typography gutterBottom variant="h5" component="div">
-                     {book.titulo}
-                     </Typography>
-                     <Typography gutterBottom variant="h5" component="div">
-                     {book.autores}
-                     </Typography>
-                     <Typography gutterBottom variant="h5" component="div">
-                     {book.editorial}
-                     </Typography>
-                     <Typography gutterBottom variant="h5" component="div">
-                     {book.genero}
-                     </Typography>
-                     <Typography gutterBottom variant="h5" component="div">
-                     {book.descripción}
-                     </Typography>
-                     <Typography gutterBottom variant="h5" component="div">
-                     {book.donación}
-                     </Typography>
-                 </CardContent>
-                 <CardActions>
-                     <Button size="small">Agregar Carrito</Button>
-                 </CardActions>
-                 </Card>
-             </div>
-   ))
- };
+          <Grid item mb={4} xs={12} md={4} sm={6} spacing={2}>
+            <Card sx={{ 
+                maxWidth: '250px',
+                 maxHeight: '600px',
+                 ml: '20px'
+                 }}>
+                <CardMedia
+                    component="img"
+                    alt={titulo}
+                    height="380"
+                    image={imagen}
+                />
+                <CardContent>
+                <Typography gutterBottom variant="p" component="div">
+                    {isbn}
+                    </Typography>
+                    <Typography gutterBottom variant="p" component="div">
+                    {titulo}
+                    </Typography>
+                    <Typography gutterBottom variant="p" component="div">
+                    {autores}
+                    </Typography>
+                    <Typography gutterBottom variant="p" component="div">
+                    {genero}
+                    </Typography>
+                    <Typography gutterBottom variant="p" component="div">
+                    {editorial}
+                    </Typography>
+                    <Typography gutterBottom variant="p" component="div">
+                    {donación}€
+                    <Typography gutterBottom variant="p" component="div">
+                    {descripción}
+                    </Typography>
+                    </Typography>
+                </CardContent>
+                <CardActions>
+                    <Stack spacing={2} width='100%' centered >
+                        <Button color="info" size="large" variant="contained">AÑADIR A LA CESTA</Button>
+                    </Stack>
+                </CardActions>
+                </Card>
+       </Grid>
 
 
     </>
