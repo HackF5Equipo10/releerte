@@ -1,0 +1,63 @@
+{
+    "books":[{
+        "id":1,
+        "isbn": 9788491293552,
+        "titulo": "EL CUCO DE CRISTAL",
+        "donación": 1.99,
+        "autores": "JAVIER CASTILLO",
+        "editorial": "SUMA",
+        "genero": "Novela",
+        "imagen": "https://imagessl2.casadellibro.com/a/l/t7/52/9788491293552.jpg",
+        "descripción": "Nueva York, 2017. Cora Merlo, médico residente de primer año, sufre un infarto fulminante que la obliga a un trasplante de corazón",
+        "stock": true
+    },
+    {
+        "id":2,
+        "isbn": 9788432251092,
+        "titulo": "La elegancia del erizo",
+        "donación": 1.99, 
+        "autores": "Muriel Barbery",
+        "editorial": "Seix Barral",
+        "genero": "Novela",
+        "imagen": "https://imagessl4.casadellibro.com/a/l/t7/84/9788432251184.jpg",
+        "descripción": "En el número 7 de la calle Grenelle, un inmueble burgués de París, nada es lo que parece. Dos de sus habitantes esconden un secreto.",
+        "stock": true
+    },
+    {
+        "id":3,
+        "isbn": 9788408267560,
+        "titulo": "LOS CASOS DE TIMMI TOBBSON JUNIOR",
+        "donación": 1.99,
+        "autores": "J.I. WAGNER",
+        "editorial": "PLANETA",
+        "genero": "infantil",
+        "imagen": "https://imagessl0.casadellibro.com/a/l/t7/60/9788408267560.jpg",
+        "descripción": "Timmi y sus amigos encuentran un mensaje secreto en un viejo libro que los hará emprender un emocionante viaje para desentrañar un misterio que les cambiará la vida y ¡les ayudará a convertirse en los Jóvenes Exploradores!",
+        "stock": true
+    },
+    {
+        "id":4,
+        "isbn": 9788432241536,
+        "titulo": "LA DAMA",
+        "donación": 1.99,
+        "autores": "RAGNAR JONASSON",
+        "editorial": "SEIX BARRAL",
+        "genero": "Novela",
+        "imagen": "https://imagessl6.casadellibro.com/a/l/t7/36/9788432241536.jpg",
+        "descripción": " Una investigadora al límite de la jubilación. Una arriesgada proposición. Sólo quince días para resolver el caso más difícil de toda su carrera.",
+        "stock": true
+    },
+    {
+        "id":5,
+        "isbn": 9788432210006,
+        "titulo": "El enredo de la bolsa y la vida",
+        "donación": 1.99,
+        "autores": "Eduardo Mendoza",
+        "editorial": "SEIX BARRAL",
+        "genero": "Novela",
+        "imagen": "https://imagessl6.casadellibro.com/a/l/t7/06/9788432210006.jpg",
+        "descripción": "El anónimo detective de El misterio de la cripta embrujada, El laberinto de las aceitunas y La aventura del tocador de señoras regresa a la acción en tiempos de crisis.",
+        "stock": true
+    }
+    ]
+}
