@@ -1,20 +1,22 @@
-import React, { useContext } from 'react'
+import React, { useEffect, useState } from 'react'
+import { getBooks } from '../../services/functions';
+import { getBookById } from '../../services/functions';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import { BooksContext } from '../../context/BooksContext';
-import IconButton from '@mui/material/IconButton';
+import Grid from '@mui/material/Grid';
 
-function BooksComponents({imagen, titulo, donación, autores }) {
+
+function DetailedView({imagen, isbn, titulo, autores, editorial, donación, genero, descripción}) {
+
+
   return (
     <>
-    <Grid item mb={4} xs={12} md={4} sm={6} spacing={2}>
+          <Grid item mb={4} xs={12} md={4} sm={6} spacing={2}>
             <Card sx={{ 
                 maxWidth: '250px',
                  maxHeight: '600px',
@@ -27,6 +29,9 @@ function BooksComponents({imagen, titulo, donación, autores }) {
                     image={imagen}
                 />
                 <CardContent>
+                <Typography gutterBottom variant="p" component="div">
+                    {isbn}
+                    </Typography>
                     <Typography gutterBottom variant="p" component="div">
                     {titulo}
                     </Typography>
@@ -34,19 +39,29 @@ function BooksComponents({imagen, titulo, donación, autores }) {
                     {autores}
                     </Typography>
                     <Typography gutterBottom variant="p" component="div">
+                    {genero}
+                    </Typography>
+                    <Typography gutterBottom variant="p" component="div">
+                    {editorial}
+                    </Typography>
+                    <Typography gutterBottom variant="p" component="div">
                     {donación}€
+                    <Typography gutterBottom variant="p" component="div">
+                    {descripción}
+                    </Typography>
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Stack spacing={2} width='100%'>
-                        <Button color="info" size="large" variant="contained">VER FICHA</Button>
+                    <Stack spacing={2} width='100%' centered >
                         <Button color="info" size="large" variant="contained">AÑADIR A LA CESTA</Button>
                     </Stack>
                 </CardActions>
                 </Card>
        </Grid>
+
+
     </>
   )
 }
 
-export default BooksComponents
+export default DetailedView

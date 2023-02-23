@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# ReLeerTe 
+![ReLeerTe](/logoReleerte.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## "Abriendo mundos a través de la educación: Libros que cambian vidas"
 
-In the project directory, you can run:
+## Tabla de Contenido
+1. [Nuestros volares](#nuestros-valores)
+3. [Instalación](#Instalación)
+4. [Prototipo](#Prototipo)
+5. [Autoras](#Autoras)
 
-### `npm start`
+## Nuestros volares 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Compromiso con la educación
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Somos una empresa comprometida con la educación. Creemos que la educación es un derecho y un factor clave para el desarrollo de los niños y jóvenes. Por eso, nuestra empresa vende libros de calidad que contribuyen a la educación de los niños. Nuestros libros son relevantes, informativos y de fácil comprensión, y ofrecemos una variedad de opciones para satisfacer las necesidades de diferentes grupos de edad e intereses
 
-### `npm test`
+### Responsabilidad social
+Asumimos una responsabilidad social y somos conscientes de nuestro impacto en la sociedad. Por ello, donamos dinero a los niños que necesitan apoyo en la educación, contribuyendo a mejorar sus oportunidades y reducir la brecha educativa.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Transparencia y ética
 
-### `npm run build`
+Nos regimos por altos estándares éticos y de transparencia en todas nuestras operaciones y donaciones. Nuestras políticas son claras y justas en relación a la donación de dinero y en todas nuestras actividades comerciales.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Innovación
+Estamos comprometidos con la innovación y siempre estamos abiertos a nuevas ideas y formas de apoyar la educación. Buscamos constantemente nuevas tecnologías y herramientas de aprendizaje, colaboramos con otras organizaciones y creamos programas de voluntariado, entre otras iniciativas innovadoras.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Instalación
+1. Clonar [repositorio](https://github.com/HackF5Equipo10/releerte).
+2. Utiliza el comando <strong>npm install</strong> en la terminal, para descargarte todas las dependencias en tu local.
+3. Utiliza el comando <strong>npm run api-books</strong> en la terminal, para ejecutar la API.
+4. Utiliza el comando <strong>npm start</strong> en la terminal, para renderizar el projecto.
+Debes tener ejecutando en tu local la API y el proyecto React.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
