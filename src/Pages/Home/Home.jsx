@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { getBooks } from '../../services/functions';
 import BooksComponents from '../../Components/Books/BooksComponents'
 import Grid from '@mui/material/Grid';
-import NavBar from '../../Components/NavBar/NavBar'
 import './Home.style.css'
 
 const Home = () => {
