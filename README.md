@@ -57,41 +57,38 @@ Debes tener ejecutando en tu local la API y el proyecto React.
 ###  Vistas
 
 
-<p align="center"><img width="350" alt="nombre" src="https://user-images.githubusercontent.com/116894398/220854482-4ba4ba32-1b3a-4236-92ef-ceb9b6c289b9.png"><img width="350" alt="nombre" src="https://user-images.githubusercontent.com/116894398/220931773-3ac91fa6-0d63-4260-a2ac-014c8a3c550e.png"></p>
+<p align="center"><img width="400" alt="nombre" src="https://user-images.githubusercontent.com/116894398/220981437-2c1d2f32-bc43-45b8-a1ad-e6d1818a9003.png"></p>
 
-<p align="center"><img width="350" alt="nombre" src="https://user-images.githubusercontent.com/116894398/220931773-3ac91fa6-0d63-4260-a2ac-014c8a3c550e.png"><img width="160" alt="nombre" src="https://user-images.githubusercontent.com/116894398/220854591-8a970647-1727-4a46-99a7-8feeb8116110.png"><img width="160" alt="nombre" src="https:/![Desktop - 8](https://user-images.githubusercontent.com/116894398/220927078-a0136816-4d92-4e91-9d7e-e6640398fc4a.png)
-/user-images.githubusercontent.com/116894398/220854591-8a970647-1727-4a46-99a7-8feeb8116110.png">
+<p align="center"><img width="400" alt="nombre" src="https://user-images.githubusercontent.com/116894398/221011616-482038e6-c960-4920-aa31-780290f7af85.png"></p>
 
+<p align="center"><img width="400" alt="nombre" src="https://user-images.githubusercontent.com/116894398/221012346-43432757-f8ca-4b2e-ab09-d25f746e88e4.png"></p>
 
-  
-  
-  
-  
-  
+<p align="center"><img width="400" alt="nombre" src="https://user-images.githubusercontent.com/116894398/221012780-071e3d09-fa88-427f-a99a-72978e09321a.png"></p>
 
   
   
+
 
 
 
 - [Figma](https://www.figma.com/file/5GmAf7RU2kgx6R98ziE2Jm/ReLeerte?node-id=0%3A1&t=E8mfbBSeBy2SelRx-0)
 
 
-![Captura de pantalla (194)](https://user-images.githubusercontent.com/116894398/220935818-2b9aa462-5fcc-46c7-ae2f-b0d8c82e7031.png)
+![Captura de pantalla (198)](https://user-images.githubusercontent.com/116894398/221013672-933627b7-9aa4-4236-b270-739d1ae38fb9.png)
 
-  
-  
-  
-  ![Captura de pantalla (195)](https://user-images.githubusercontent.com/116894398/220936484-2723ba7f-d639-461e-b5a9-ea6fe5816e49.png)
+
+![Captura de pantalla (199)](https://user-images.githubusercontent.com/116894398/221014159-c4655fa6-ea65-473e-bdba-50307264bf4d.png)
+
+
 
 
 ### Diagrama de Flujo
 
 
-![Captura de pantalla (188)](https://user-images.githubusercontent.com/116894398/220854939-aed8532c-c7ac-4ba7-b0c1-fefed89d3b78.png)
 
 
 
+![Captura de pantalla (200)](https://user-images.githubusercontent.com/116894398/221014919-30715fed-1b91-4c44-a7da-72353749cd41.png)
 
 
 
@@ -100,7 +97,7 @@ Debes tener ejecutando en tu local la API y el proyecto React.
 ### Autoras/es
 - [Celia García Castilla] (https://github.com/CeliaGC)
 - [Elvia Benedith] (https://github.com/ElviaBth)
-- [Esther Ama] (https://github.com/EstherAma)
+- [Esther De Luque] (https://github.com/EstherAma)
 - [Hel Aige] (https://github.com/HelAige)
 - [May Sánchez] (https://github.com/MaySanCal)
 - [Oksana Fedyukova] (https://github.com/OksanaFedyukova)
@@ -216,7 +213,7 @@ Debes tener ejecutando en tu local la API y el proyecto React.
 ### Authors
 - [Celia García Castilla] (https://github.com/CeliaGC)
 - [Elvia Benedith] (https://github.com/ElviaBth)
-- [Esther Ama] (https://github.com/EstherAma)
+- [Esther De Luque] (https://github.com/EstherAma)
 - [Hel Aige] (https://github.com/HelAige)
 - [May Sánchez] (https://github.com/MaySanCal)
 - [Oksana Fedyukova] (https://github.com/OksanaFedyukova)
