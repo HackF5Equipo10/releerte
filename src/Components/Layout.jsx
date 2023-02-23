@@ -6,7 +6,7 @@ import NavBar from './NavBar/NavBar.jsx'
 const Layout = () => {
     return (
     <div>
-        <NavBar/>
+        <NavBar />
         <main>
             <Outlet/>
         </main>

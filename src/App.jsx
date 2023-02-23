@@ -6,7 +6,7 @@ import Layout from './Components/Layout'
 import { LoaderFunction } from 'react-router-dom';
 import { getBookById } from './services/functions';
 import functions from './services/functions'
-
+import './GlobalStyles.css'
 
 function App() {
   async function fetchBook ({params}){
