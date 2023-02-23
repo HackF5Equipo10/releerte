@@ -2,9 +2,9 @@ import React, {createContext, useState, useEffect} from 'react'
 import Swal from 'sweetalert2'
 
 
-export const CardsContext = createContext();
+export const BooksContext = createContext();
 
-export const CardsProvider = ({children}) => {
+export const BookssProvider = ({children}) => {
     const [booksItems, setBooksItems] = useState(() => {
         try {
             const booksinsessionstorage = sessionStorage.getItem("booksSelected");
@@ -16,32 +16,32 @@ export const CardsProvider = ({children}) => {
     });
 
     useEffect(() => {
-        sessionStorage.setItem("cardsSelected", JSON.stringify(booksItems));
+        sessionStorage.setItem("booksSelected", JSON.stringify(booksItems));
     }, [booksItems]);
 
-    const addToCollection = (card) => {
+    const addToCollection = (book) => {
         const inCollection = booksItems.find(
-            (cardInLecture) => cardInLecture.id === card.id
+            (bookInCollection) => bookInCollection.id === book.id
             );
         
-        if (inLecture) {
+        if (inCollection) {
             return (
                 Swal.fire('Elige un libro diferente. Este libro ya había sido agregado.'));  
         };
         
-        if (cardsItems && cardsItems.length < 3) {
-            setCardsItems([...cardsItems, {...card}])
+        if (booksItems && booksItems.length < 8) {
+            setBooksItems([...booksItems, {...book}])
             return
         }
-        Swal.fire('ya agregaste 3 cartas');
+        Swal.fire('ya agregaste 8 libros a tus favoritos');
 
        
     };
 
     return (
-        <CardsContext.Provider value={{cardsItems, addToLecture}}>
+        <BooksContext.Provider value={{booksItems, addToCollection}}>
             {children}
-        </CardsContext.Provider>
+        </BooksContext.Provider>
     )
 };
 
