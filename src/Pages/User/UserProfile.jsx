@@ -1,39 +1,87 @@
-import React from 'react';
-import {
-  Box,
-  Button,
-  Container,
-  Typography,
-  AppBar,
-  Toolbar,
-} from '@mui/material';
-import BooksOrder from '../../Components/Basket/BooksOrder';
+import { useEffect, useState } from 'react';
+import BasketList1 from '../../Components/Basket/BasketList1';
+import BooksList1 from '../../Components/Basket/BooksList1';
+import { getBooks } from '../../services/functions';
+import Search from '../../Components/Basket/Search';
 
 
-function UserProfile() {
+const UserProfile = () => {
+    const [books, setBooks] = useState([]);
+    const [order, setOrder] = useState([]);
+    const [search, setSearch] = useState('');
+   
+    const getAllbooks = async () =>{
+        const booksData = await getBooks();
+        setBooks(booksData);
+    }
+    
+    useEffect(() => {
+        getAllbooks();
+    }, []);
 
+    const handleChange = (e) => {
+        setSearch(e.target.value);
+        setBooks(
+            books.filter((book) =>
+                book.name.toLowerCase().includes(e.target.value.toLowerCase())
+            )
+        );
+    };
 
+    const addToOrder = (booksItem) => {
+        let quantity = 1;
 
+        const indexInOrder = order.findIndex(
+            (item) => item.id === booksItem.id
+        );
 
-  return (
-    <>
-    <div>
-    <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
-            <Box sx={{ display: 'flex', alignItems: 'center' }}>
-              <Typography variant="h6" sx={{ mr: 1 }}>ReLeerTe</Typography>
-            </Box>
-          </Typography>
-          <Button color="inherit">LOG OUT</Button>
-        </Toolbar>
-      </AppBar >
-      <Container sx={{ p: 2 }}>         
-          <BooksOrder />
-       </Container>
-       </div>
-    </>
-  );
-}
+        if (indexInOrder > -1) {
+            quantity = order[indexInOrder].quantity + 1;
+
+            setOrder(
+                order.map((item) => {
+                    if (item.id !== booksItem.id) return item;
+
+                    return {
+                        id: item.id,
+                        titulo: item.titulo,
+                        autores: item.autores,
+                        isbn: item.isbn,
+                        donación: item.donación,
+                        imagen: item.imagen,
+                        quantity,
+                    };
+                })
+            );
+        } else {
+            setOrder([
+                ...order,
+                {
+                    id: booksItem.id,
+                    titulo: booksItem.titulo,
+                    autores: booksItem.autores,
+                    isbn: booksItem.isbn,
+                    donación: booksItem.donación,
+                    imagen: booksItem.imagen,
+                    quantity,
+                },
+            ]);
+        }
+    };
+    
+    const removeFromOrder = (booksItem) => {
+        setOrder(order.filter((item) => item.id !== booksItem));
+    };
+
+    return (
+        <div className='App'>
+            <div className='container'>
+                <Search value={search} onChange={handleChange} />
+                <BooksList1 books={books} setOrder={addToOrder} />
+                <BasketList1 order={order} setOrder={removeFromOrder} />
+            </div>
+        </div>
+    );
+};
 
 export default UserProfile;
