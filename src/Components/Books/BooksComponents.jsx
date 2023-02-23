@@ -6,6 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import {Typography, Modal,Box,Link, }from '@mui/material';
+import Stack from '@mui/material/Stack';
 
 function BooksComponents({imagen, titulo, donación, autores, book}) {
 
@@ -43,8 +44,10 @@ function BooksComponents({imagen, titulo, donación, autores, book}) {
                     </Typography>
                 </CardContent>
                 <CardActions>
+                <Stack spacing={1} width='100%'>
                     <Button color="info" size="large" variant="contained">VER FICHA</Button>
                     <Button color="info" size="large" variant="contained" onClick={handleAddToCart}>AÑADIR A LA CESTA</Button>
+                </Stack>
                 </CardActions>
                 </Card>
              </Grid>
