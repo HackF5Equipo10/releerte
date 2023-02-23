@@ -4,7 +4,7 @@ import Swal from 'sweetalert2'
 
 export const BooksContext = createContext();
 
-export const BookssProvider = ({children}) => {
+export const BooksProvider = ({children}) => {
     const [booksItems, setBooksItems] = useState(() => {
         try {
             const booksinsessionstorage = sessionStorage.getItem("booksSelected");

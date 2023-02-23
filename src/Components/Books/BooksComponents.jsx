@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -8,11 +8,11 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import { BooksContext } from '../../context/BooksContext';
+/* import { BooksContext } from '../../context/BooksContext'; */
 import IconButton from '@mui/material/IconButton';
 
-function BooksComponents({imagen, titulo, donación, autores }) {
-    const {addToCollection}= useContext(BooksContext);
+function BooksComponents({imagen, titulo, donación, autores, book }) {
+/*     const {addToCollection} = useContext(BooksContext); */
   return (
     <>
     <Grid container item mb={4} xs={12} md={4} sm={6} spacing={2}>
@@ -42,7 +42,7 @@ function BooksComponents({imagen, titulo, donación, autores }) {
                     <Stack spacing={2} width='100%'>
                         <IconButton aria-label="add to favorites">
                         <FavoriteIcon 
-                        onClick={()=>addToCollection()}
+/*                         onClick={()=>addToCollection(book)} */
                         />
                         </IconButton>
                         <Button color="info" size="large" variant="contained">VER FICHA</Button>
