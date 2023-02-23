@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 import {Typography, Modal,Box,Link, }from '@mui/material';
 import Stack from '@mui/material/Stack';
 
-function BooksComponents({imagen, titulo, donación, autores, book}) {
+function BooksComponents({imagen, titulo, donación, autores, id}) {
 
     const [open, setOpen] = useState(false);
 
@@ -45,7 +45,9 @@ function BooksComponents({imagen, titulo, donación, autores, book}) {
                 </CardContent>
                 <CardActions>
                 <Stack spacing={1} width='100%'>
+                <Link to={`/book-detail/${id}`}>
                     <Button color="info" size="large" variant="contained">VER FICHA</Button>
+                </Link>
                     <Button color="info" size="large" variant="contained" onClick={handleAddToCart}>AÑADIR A LA CESTA</Button>
                 </Stack>
                 </CardActions>
