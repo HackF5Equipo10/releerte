@@ -14,20 +14,23 @@ const BasketList1 = (props) => {
         );
     }
 
-    return (
+    return ( 
+    <>
         <ul className='basket list-group col-md-4'>
             <li className='list-group-item active'>CESTA</li>
             {order.map((item, index) => (
                 <BasketItem1 key={index} setOrder={setOrder} {...item} />
             ))}
             <li className='list-group-item active'>
-                total:{' '}
+                Total:{' '}
                 {order.reduce((acc, item) => {
-                    return acc + item.donacion * item.quantity;
-                }, 0)}{' '}
-                eu.
+               console.log(`donacion: ${item.donacion}, quantity: ${item.quantity}`);
+              return acc + (item.donacion * item.quantity);
+             }, 0)} eu.
             </li>
         </ul>
+       
+        <button>FINALIZAR</button></>
     );
 };
 

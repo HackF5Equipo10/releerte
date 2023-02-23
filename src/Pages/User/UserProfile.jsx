@@ -9,7 +9,9 @@ const UserProfile = () => {
     const [books, setBooks] = useState([]);
     const [order, setOrder] = useState([]);
     const [search, setSearch] = useState('');
-   
+    const [products, setProducts] = useState(books);
+
+
     const getAllbooks = async () =>{
         const booksData = await getBooks();
         setBooks(booksData);
@@ -20,12 +22,17 @@ const UserProfile = () => {
     }, []);
 
     const handleChange = (e) => {
+        if (!e.target.value) {
+            setProducts(books);
+            setSearch('');
+            return;
+        }
+
         setSearch(e.target.value);
-        setBooks(
-            books.filter((book) =>
-                book.name.toLowerCase().includes(e.target.value.toLowerCase())
-            )
-        );
+        setProducts(
+            products.filter((book) =>
+                book.titulo.toLowerCase().includes(e.target.value.toLowerCase())
+            ))
     };
 
     const addToOrder = (booksItem) => {
@@ -73,12 +80,13 @@ const UserProfile = () => {
         setOrder(order.filter((item) => item.id !== booksItem));
     };
 
+    
     return (
         <div className='App'>
             <div className='container'>
-                <Search value={search} onChange={handleChange} />
-                <BooksList1 books={books} setOrder={addToOrder} />
                 <BasketList1 order={order} setOrder={removeFromOrder} />
+                <BooksList1 books={books} setOrder={addToOrder} />
+                <Search value={search} onChange={handleChange} />
             </div>
         </div>
     );
