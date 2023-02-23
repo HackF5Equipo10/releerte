@@ -1,24 +1,15 @@
-import React, { useEffect, useState } from 'react'
-import { getBooks } from '../../services/functions';
+import React, { useState } from 'react'
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
+import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import {Typography, Modal,Box,Link, }from '@mui/material';
 
-function BooksComponents() {
-    const [books, setBooks]= useState([]);
+function BooksComponents({imagen, titulo, donación, autores, book}) {
+
     const [open, setOpen] = useState(false);
-     
-    const getAllbooks =async() =>{
-        const listOfBooks = await getBooks();
-        setBooks(listOfBooks);
-        console.log(books);
-    }
-    useEffect(() => {
-        getAllbooks();
-      }, []);
 
       const handleAddToCart = () => {
           setOpen(true);
@@ -28,33 +19,37 @@ function BooksComponents() {
       };
   return (
     <>
-       { books.map(book => (
-        
-            <div key={book.id}>
-
-            <Card sx={{ maxWidth: 345 }}>
+      <Grid container item mb={4} xs={12} md={4} sm={6} spacing={2}>
+            <Card sx={{ 
+                maxWidth: '250px',
+                maxHeight: '600px',
+                ml: '20px'
+              }}>
                 <CardMedia
                     component="img"
-                    alt={book.title}
-                    height="140"
-                    image={book.imagen}
+                    alt={titulo}
+                    height="380"
+                    image={imagen}
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                    {book.titulo}
+                <Typography gutterBottom variant="p" component="div">
+                    {titulo}
                     </Typography>
-                    <Typography gutterBottom variant="h5" component="div">
-                    {book.autores}
+                    <Typography gutterBottom variant="p" component="div">
+                    {autores}
+                    </Typography>
+                    <Typography gutterBottom variant="p" component="div">
+                    Donación: {donación}€
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="small">VER FICHA</Button>
-                    <Button size="small" onClick={handleAddToCart}>Agregar Carrito</Button>
+                    <Button color="info" size="large" variant="contained">VER FICHA</Button>
+                    <Button color="info" size="large" variant="contained" onClick={handleAddToCart}>AÑADIR A LA CESTA</Button>
                 </CardActions>
                 </Card>
-            </div>
-  ))
-};
+             </Grid>
+
+
 
 <Modal open={open} onClose={handleClose}>
         <Box sx={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 400, bgcolor: 'background.paper', border: '2px solid #000', boxShadow: 24, p: 4 }}>
