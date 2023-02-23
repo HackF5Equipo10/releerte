@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -7,9 +7,11 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
-import { Link, createBrowserRouter } from 'react-router-dom';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import { BooksContext } from '../../context/BooksContext';
+import IconButton from '@mui/material/IconButton';
 
-function BooksComponents({imagen, titulo, donación, autores, id }) {
+function BooksComponents({imagen, titulo, donación, autores }) {
   return (
     <>
     <Grid item mb={4} xs={12} md={4} sm={6} spacing={2}>
@@ -36,10 +38,8 @@ function BooksComponents({imagen, titulo, donación, autores, id }) {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Stack spacing={2} width='100%' centered >
-                    <Link to={`/book-detail/${id}`}>
-  <Button color="info" size="large" variant="contained">VER FICHA</Button>
-</Link>
+                    <Stack spacing={2} width='100%'>
+                        <Button color="info" size="large" variant="contained">VER FICHA</Button>
                         <Button color="info" size="large" variant="contained">AÑADIR A LA CESTA</Button>
                     </Stack>
                 </CardActions>
