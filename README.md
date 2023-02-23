@@ -5,7 +5,7 @@
 2. [Tecnologías](#Tecnologías)
 3. [Instalación](#Instalación)
 4. [Vistas](#Vistas)
-5. [Autoras](#Autoras)
+5. [Autoras/es](#Autoras/es)
 
 
 ### Información General
@@ -57,34 +57,47 @@ Debes tener ejecutando en tu local la API y el proyecto React.
 ###  Vistas
 
 
-<p align="center"><img width="400" alt="nombre" src="https://user-images.githubusercontent.com/116894398/220854482-4ba4ba32-1b3a-4236-92ef-ceb9b6c289b9.png"><img width="160" alt="nombre" src="https://user-images.githubusercontent.com/116894398/220854591-8a970647-1727-4a46-99a7-8feeb8116110.png"><img width="160" alt="nombre" src="https://user-images.githubusercontent.com/116894398/220854591-8a970647-1727-4a46-99a7-8feeb8116110.png"><img width="160" alt="nombre" src="https://user-images.githubusercontent.com/116894398/220854591-8a970647-1727-4a46-99a7-8feeb8116110.png"></p>
+<p align="center"><img width="350" alt="nombre" src="https://user-images.githubusercontent.com/116894398/220854482-4ba4ba32-1b3a-4236-92ef-ceb9b6c289b9.png"><img width="350" alt="nombre" src="https://user-images.githubusercontent.com/116894398/220931773-3ac91fa6-0d63-4260-a2ac-014c8a3c550e.png"></p>
 
-![Captura de pantalla (186)](https://user-images.githubusercontent.com/116894398/220854482-4ba4ba32-1b3a-4236-92ef-ceb9b6c289b9.png)
+<p align="center"><img width="350" alt="nombre" src="https://user-images.githubusercontent.com/116894398/220931773-3ac91fa6-0d63-4260-a2ac-014c8a3c550e.png"><img width="160" alt="nombre" src="https://user-images.githubusercontent.com/116894398/220854591-8a970647-1727-4a46-99a7-8feeb8116110.png"><img width="160" alt="nombre" src="https:/![Desktop - 8](https://user-images.githubusercontent.com/116894398/220927078-a0136816-4d92-4e91-9d7e-e6640398fc4a.png)
+/user-images.githubusercontent.com/116894398/220854591-8a970647-1727-4a46-99a7-8feeb8116110.png">
 
 
+  
+  
+  
+  
+  
+
+  
+  
 
 
 
 - [Figma](https://www.figma.com/file/5GmAf7RU2kgx6R98ziE2Jm/ReLeerte?node-id=0%3A1&t=E8mfbBSeBy2SelRx-0)
 
 
-![Captura de pantalla (185)](https://user-images.githubusercontent.com/116894398/220854782-1a717cba-08bd-4383-8f73-81e59af75d26.png)
+![Captura de pantalla (194)](https://user-images.githubusercontent.com/116894398/220935818-2b9aa462-5fcc-46c7-ae2f-b0d8c82e7031.png)
 
-### DIAGRAMA DE FLUJO
+  
+  
+  
+  ![Captura de pantalla (195)](https://user-images.githubusercontent.com/116894398/220936484-2723ba7f-d639-461e-b5a9-ea6fe5816e49.png)
 
 
+### Diagrama de Flujo
 
 
 ![Captura de pantalla (188)](https://user-images.githubusercontent.com/116894398/220854939-aed8532c-c7ac-4ba7-b0c1-fefed89d3b78.png)
 
 
 
+https://user-images.githubusercontent.com/116894398/220854482-4ba4ba32-1b3a-4236-92ef-ceb9b6c289b9.png
 
 
 
 
-
-### AUTORES:
+### Autoras/es
 - [Celia García Castilla] (https://github.com/CeliaGC)
 - [Elvia Benedith] (https://github.com/ElviaBth)
 - [Esther Ama] (https://github.com/EstherAma)
