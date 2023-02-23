@@ -6,7 +6,7 @@ import Layout from './Components/Layout'
 import UserProfile from './Pages/User/UserProfile';
 import Login from './Components/Login/Login';
 import Cart from './Components/Basket/Cart'
-import './GlobalStyles.css'
+
 
 
 function App() {
