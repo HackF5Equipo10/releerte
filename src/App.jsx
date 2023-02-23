@@ -6,6 +6,7 @@ import Layout from './Components/Layout'
 
 import UserProfile from './Pages/User/UserProfile';
 import Login from './Components/Login/Login';
+import Cart from './Components/Basket/Cart'
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/user" element={<UserProfile />} />
         <Route path="/login" element={<Login />} />
-
+        <Route path="/cart" element={<Cart />} />
       </Route>
     </Routes>
     </div>

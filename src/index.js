@@ -28,7 +28,14 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'Montserrat',
+    fontFamily: 'Montserrat, sans-serif',
+    h1: {
+      fontFamily: 'Montserrat, sans-serif',
+    },
+    h2: {
+      fontFamily: 'Montserrat, sans-serif',
+    },
+   
   },
 });
 
