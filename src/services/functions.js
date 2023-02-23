@@ -7,6 +7,7 @@ const getBooks = async () =>{
     return response.data;
 }
 
-export{
-    getBooks
-}
+  
+  export {
+    getBooks,
+  };

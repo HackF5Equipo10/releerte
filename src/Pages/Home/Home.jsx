@@ -6,6 +6,7 @@ const Home = () => {
     <>
         <h1>HOME PAGE</h1>
         <BooksComponents/>
+        
     </>
     )
 }

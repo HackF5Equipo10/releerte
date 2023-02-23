@@ -4,6 +4,8 @@ import DetailBook from './Pages/DetailBook/DetailBook'
 import AboutUs from './Pages/AboutUs/AboutUs'
 import Layout from './Components/Layout'
 
+import UserProfile from './Pages/User/UserProfile';
+import Login from './Components/Login/Login';
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/book-detail" element={<DetailBook />} />
         <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/book-cards" element={<BookCards/>} />
+        <Route path="/user" element={<UserProfile />} />
+        <Route path="/login" element={<Login />} />
+
       </Route>
     </Routes>
     </div>
