@@ -11,7 +11,7 @@ import Stack from '@mui/material/Stack';
 function BooksComponents({imagen, titulo, donación, autores }) {
   return (
     <>
-    <Grid item mb={4} xs={12} md={4} sm={6} spacing={2}>
+    <Grid container item mb={4} xs={12} md={4} sm={6} spacing={2}>
             <Card sx={{ 
                 maxWidth: '250px',
                  maxHeight: '600px',
@@ -35,7 +35,7 @@ function BooksComponents({imagen, titulo, donación, autores }) {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Stack spacing={2} width='100%' centered >
+                    <Stack spacing={2} width='100%'>
                         <Button color="info" size="large" variant="contained">VER FICHA</Button>
                         <Button color="info" size="large" variant="contained">AÑADIR A LA CESTA</Button>
                     </Stack>
