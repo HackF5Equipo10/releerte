@@ -3,7 +3,7 @@ import Home from './Pages/Home/Home'
 import DetailBook from './Pages/DetailBook/DetailBook'
 import AboutUs from './Pages/AboutUs/AboutUs'
 import Layout from './Components/Layout'
-
+import './GlobalStyles.css'
 
 function App() {
   return (

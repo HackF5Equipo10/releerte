@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/images/logo.png'
+import './NavBar.style.css'
 
 const NavBar = () => {
 
@@ -28,14 +29,14 @@ const searcher = (e) => {
 
 
     return (
-    <>
+    <nav>
         <img src={logo} alt='logo'/>
         <input value={search} onChange={searcher} type='text' placeholder='Busca tu libro o autor favorito' />
-        <div>
-        <Link to='/'>Inicio</Link>
-        <Link to='/about-us'>Sobre nosotros</Link>
+        <div className='navLinks'>
+            <Link to='/'><p>Inicio</p></Link>
+            <Link to='/about-us'><p>Sobre nosotros</p></Link>
         </div>
-    </>
+    </nav>
     )
 }
 
