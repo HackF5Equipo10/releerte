@@ -57,10 +57,12 @@ Debes tener ejecutando en tu local la API y el proyecto React.
 ###  Vistas
 
 
+<p align="center"><img width="400" alt="nombre" src="https://user-images.githubusercontent.com/116894398/220854482-4ba4ba32-1b3a-4236-92ef-ceb9b6c289b9.png"><img width="160" alt="nombre" src="https://user-images.githubusercontent.com/116894398/220854591-8a970647-1727-4a46-99a7-8feeb8116110.png"><img width="160" alt="nombre" src="https://user-images.githubusercontent.com/116894398/220854591-8a970647-1727-4a46-99a7-8feeb8116110.png"><img width="160" alt="nombre" src="https://user-images.githubusercontent.com/116894398/220854591-8a970647-1727-4a46-99a7-8feeb8116110.png"></p>
+
 ![Captura de pantalla (186)](https://user-images.githubusercontent.com/116894398/220854482-4ba4ba32-1b3a-4236-92ef-ceb9b6c289b9.png)
 
 
-![Captura de pantalla (186)](https://user-images.githubusercontent.com/116894398/220854591-8a970647-1727-4a46-99a7-8feeb8116110.png)
+
 
 
 - [Figma](https://www.figma.com/file/5GmAf7RU2kgx6R98ziE2Jm/ReLeerte?node-id=0%3A1&t=E8mfbBSeBy2SelRx-0)
