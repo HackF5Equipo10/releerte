@@ -11,8 +11,7 @@ function BooksCollectionComponent() {
             <>
             
                 {booksItems.map((book, index) => (
-                    <div key={index}>
-{/*                         <p>{index === 0 ? ('Pasado') : index === 1 ? ('Presente') : ('Fururo')}</p> */}
+                    <div key={index}>               
                         <img src={book.imagen} alt={book.titulo}/>
                         <p><span>{book.titulo}</span></p>
                         <p>{book.descripción}</p>

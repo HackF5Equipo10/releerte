@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { getBooks } from '../../services/functions';
 import BooksComponents from '../../Components/Books/BooksComponents'
 import Grid from '@mui/material/Grid';
 import './Home.style.css'
+import { BooksContext } from '../../context/BooksContext';
 
 const Home = () => {
 
@@ -16,7 +17,7 @@ const Home = () => {
             getAllbooks();
           }, []);
 
-
+        const {addToCollection} = useContext(BooksContext);
 
     return (
     <>
@@ -25,7 +26,7 @@ const Home = () => {
 
         <Grid container spacing={2}>
         { books.map(book => (
-        <BooksComponents key={book.id} {...book}/>
+        <BooksComponents key={book.id} {...book} book={book} addToCollection={addToCollection}/>
         ))
         }
         </Grid>

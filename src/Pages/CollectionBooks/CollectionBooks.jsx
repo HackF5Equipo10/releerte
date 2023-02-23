@@ -6,7 +6,7 @@ import { BooksProvider } from '../../context/BooksContext'
 function CollectionBooks() {
   return (
  <BooksProvider>
-    <h1>Pongo esto mientras esta listo en Navbar</h1>
+    <h1>Colección de Libros favoritos</h1>
     <BooksCollectionComponent/>
  </BooksProvider>
   )
