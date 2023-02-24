@@ -1,13 +1,18 @@
 import React from 'react'
+import './AboutUs.style.css'
 
 const AboutUs = () => {
     return (
     <>
-        <h2>
+    <div className='header-aboutus'>
+        <h3>
             Abriendo mundos a través de la educación:
             Libros que cambian vidas
-        </h2>
-        <h1>Nuestros valores</h1>
+        </h3>
+        <h4>Nuestros valores</h4>
+    </div>
+    <div className='body-aboutus'>
+
         <table>
             <tr>
                 <th>Compromiso con la educación</th>
@@ -40,6 +45,7 @@ const AboutUs = () => {
                 </td>
             </tr>
         </table>
+    </div>
     </>
     )
 }
