@@ -7,9 +7,6 @@ import BasketList1 from './Components/Basket/BasketList1';
 import UserProfile from './Pages/User/UserProfile';
 import Login from './Components/Login/Login';
 
-
-
-
 function App() {
 
   return (

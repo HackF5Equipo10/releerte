@@ -1,23 +1,24 @@
 // ONE BOOK CARD
 import React from 'react';
-import {Card, Grid,CardContent,CardMedia, Typography, CardActions,Button} from '@mui/material';
+import {Card, Grid, Stack, CardContent, CardMedia, Typography, CardActions,Button} from '@mui/material';
 
 
 const BooksItem1 = (props) => {
     const {imagen, titulo, autores,  isbn, genero, donación, setOrder } = props;
 
     return (
-        <div >
-            <Grid item mb={4} xs={12} md={4} sm={6} spacing={2}>
+        <Grid container mb={4} xs={12} md={4} sm={6} spacing={2 } sx={{mb:5}}>
+            
             <Card sx={{ 
-                maxWidth: '500px',
-                 maxHeight: '500px',
-                 ml: '20px'
+                maxWidth: '250px',
+                 maxHeight: '600px',
+                 ml: '20px',
+                mb:'7px'
                  }}>
                 <CardMedia
                     component="img"
                     alt={titulo}
-                    height="280"
+                    height="380"
                     image={imagen}
                 />
                 <CardContent>
@@ -39,7 +40,8 @@ const BooksItem1 = (props) => {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button
+                <Stack spacing={1} width='100%'>
+                    <Button color="primary" size="large" variant="contained"
                         onClick={() =>
                             setOrder({
                                 id: props.id,
@@ -53,10 +55,10 @@ const BooksItem1 = (props) => {
                     >
                         AÑADIR A LA CESTA
                     </Button>
+                    </Stack>
                     </CardActions>
                 </Card>
-       </Grid>
-    </div>
+    </Grid>
     );
 };
 
