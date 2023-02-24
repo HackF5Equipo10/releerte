@@ -1,4 +1,4 @@
-import { Routes, Route, createBrowserRouter } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home/Home'
 import DetailBook from './Pages/DetailBook/DetailBook'
 import AboutUs from './Pages/AboutUs/AboutUs'
@@ -7,9 +7,9 @@ import Layout from './Components/Layout'
 import UserProfile from './Pages/User/UserProfile';
 import Login from './Components/Login/Login';
 import Cart from './Components/Basket/Cart'
-import { LoaderFunction } from 'react-router-dom';
+
 import { getBookById } from './services/functions';
-import functions from './services/functions'
+
 import './GlobalStyles.css'
 
 function App() {
