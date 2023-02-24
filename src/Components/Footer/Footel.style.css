@@ -1,0 +1,17 @@
+.icons-footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+#caixaIcon{
+    width: 5%;
+}
+.social-media{
+    width: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
