@@ -52,9 +52,10 @@ function Login({ handleLogin }) {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <Button variant="contained" type="submit">
-          Login
-        </Button>
+        <Button variant="contained" type="submit"><Link  sx={{ textDecoration: 'none' }} to="/user">
+          Login</Link> 
+        </Button>>
+        
       </Box>
     </Box>
   );

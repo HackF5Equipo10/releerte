@@ -27,7 +27,6 @@ function Product() {
           <TableRow>
             <TableCell>Title</TableCell>
             <TableCell>Authors</TableCell>
-            <TableCell>Count</TableCell>
             <TableCell>Donation</TableCell>
             <TableCell></TableCell>
           </TableRow>

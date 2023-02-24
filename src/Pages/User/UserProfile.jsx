@@ -3,7 +3,7 @@ import BasketList1 from '../../Components/Basket/BasketList1';
 import BooksList1 from '../../Components/Basket/BooksList1';
 import { getBooks } from '../../Services/functions';
 import Search from '../../Components/Basket/Search';
-
+import { Typography } from '@mui/material';
 
 const UserProfile = () => {
     const [books, setBooks] = useState([]);
@@ -82,12 +82,12 @@ const UserProfile = () => {
 
     
     return (
-        <div className='App'>
-            <div className='container'>
+        <div >
+            <Typography variant="h3" sx={{ mr: 1, mb: 5}}>Mi Cesta </Typography>
+
                 <BasketList1 order={order} setOrder={removeFromOrder} />
                 <BooksList1 books={books} setOrder={addToOrder} />
                 <Search value={search} onChange={handleChange} />
-            </div>
         </div>
     );
 };

@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+import React from 'react';
+
+import {
+  AppBar,
+  Container,
+  Toolbar,
+  IconButton,
+  Box,
+  Typography,
+  Button,
+  Tooltip,
+  Avatar,
+  Menu,
+  MenuItem
+} from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+=======
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -14,6 +32,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
 import InputBase from '@mui/material/InputBase';
 import { styled, alpha } from '@mui/material/styles';
+>>>>>>> 413808bfd8fd3e9035668aed4c6e1f138e509e07
 import './NavBar.style.css'
 
 
@@ -90,6 +109,27 @@ function NavBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
+<<<<<<< HEAD
+       
+          <Typography
+            variant="h6"
+            noWrap
+            component="a"
+            href="/"
+            sx={{
+              mr: 2,
+              display: { xs: 'none', md: 'flex' },
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+          >
+            LOGO
+          </Typography>
+
+=======
            <Link to={ "/"} ><img src ={logo} alt="ReLerte Logo" className='img-nav'/></Link>
             <Search>
             <SearchIconWrapper>
@@ -100,6 +140,7 @@ function NavBar() {
               inputProps={{ 'aria-label': 'search' }}
             />
           </Search>
+>>>>>>> 413808bfd8fd3e9035668aed4c6e1f138e509e07
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -136,6 +177,28 @@ function NavBar() {
               ))}
             </Menu>
           </Box>
+<<<<<<< HEAD
+        
+          <Typography
+            variant="h5"
+            noWrap
+            component="a"
+            href=""
+            sx={{
+              mr: 2,
+              display: { xs: 'flex', md: 'none' },
+              flexGrow: 1,
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+          >
+            LOGO
+          </Typography>
+=======
+>>>>>>> 413808bfd8fd3e9035668aed4c6e1f138e509e07
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
