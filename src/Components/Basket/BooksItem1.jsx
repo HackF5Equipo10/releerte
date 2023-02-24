@@ -7,7 +7,7 @@ const BooksItem1 = (props) => {
     const {imagen, titulo, autores,  isbn, genero, donación, setOrder } = props;
 
     return (
-        <CGrid container mb={4} xs={12} md={4} sm={6} spacing={2 } sx={{mb:5}}>
+        <Grid container mb={4} xs={12} md={4} sm={6} spacing={2 } sx={{mb:5}}>
             
             <Card sx={{ 
                 maxWidth: '250px',

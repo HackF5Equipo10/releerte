@@ -1,7 +1,7 @@
 //Bastek - Table
 
 import BasketItem1 from './BasketItem1';
-import {Button, Typography,TableContainer, CardActions} from '@mui/material'
+import {Button, Typography,TableContainer, CardActions,CardHeader} from '@mui/material'
 
 
 const BasketList1 = (props) => {
@@ -9,17 +9,17 @@ const BasketList1 = (props) => {
 
     if (!order.length) {
         return (
-            <ul className='basket list-group col-md-4'>
-                <li className='list-group-item active'>CESTA</li>
-                <li className='list-group-item'>NO SE HE ENCONTRADO NINGUN LIBRO</li>
-            </ul>
+            <CardHeader>
+                <Typography variant sx={{m:'12px'}}>CESTA</Typography>
+                <Typography variant='button' sx={{mt:'8px'}}>NO SE HE ENCONTRADO NINGUN LIBRO</Typography>
+            </CardHeader>
         );
     }
 
     return ( 
     <>
        <TableContainer>
-            <Typography variant='button'>CESTA</Typography>
+            <Typography variant='button' sx={{mt:'8px'}}>CESTA</Typography>
             {order.map((item, index) => (
                 <BasketItem1 key={index} setOrder={setOrder} {...item} />
             ))}
@@ -33,7 +33,7 @@ const BasketList1 = (props) => {
             </CardActions>
        
        
-        <Button color="primary" size="large" variant="contained">FINALIZAR</Button>
+        <Button color="primary" size="large" variant="contained" sx={{m:'12px'}}>FINALIZAR</Button>
        </TableContainer>
         </>
     );

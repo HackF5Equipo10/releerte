@@ -53,7 +53,7 @@ function BooksComponents({imagen, titulo, donación, autores, id}) {
                 </Stack>
                 </CardActions>
                 </Card>
-             </Grid>
+            
 
 
 
@@ -67,7 +67,8 @@ function BooksComponents({imagen, titulo, donación, autores, id}) {
           </Button> 
           <Button variant="contained" color="secondary" sx={{mr: 5}}  > <Link  sx={{ textDecoration: 'none' }} to="/login">LOGIN</Link>  </Button>
         </Box>
-      </Modal>
+      </Modal> 
+      </Grid>
     </>
   )
 }
