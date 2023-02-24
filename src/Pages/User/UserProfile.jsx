@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import BasketList1 from '../../Components/Basket/BasketList1';
 import BooksList1 from '../../Components/Basket/BooksList1';
-import { getBooks } from '../../services/functions';
+import { getBooks } from '../../Services/functions';
 import Search from '../../Components/Basket/Search';
 
 

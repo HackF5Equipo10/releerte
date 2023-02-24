@@ -17,7 +17,7 @@ function DetailedView({imagen, isbn, titulo, autores, editorial, donación, gene
           <Grid item mb={4} xs={12} md={4} sm={6} spacing={2}>
             <Card sx={{ 
                 maxWidth: '250px',
-                 maxHeight: '600px',
+                 maxHeight: '1000px',
                  ml: '20px'
                  }}>
                 <CardMedia

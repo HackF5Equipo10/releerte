@@ -1,0 +1,6 @@
+.container-detail{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+}
