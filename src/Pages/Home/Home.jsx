@@ -20,8 +20,7 @@ const Home = () => {
 
     return (
     <div>
-        <h1>HOME PAGE</h1>
-
+        <h1>Catálogo</h1>
         <Grid container spacing={2}>
         { books.map(book => (
         <BooksComponents key={book.id} {...book}/>

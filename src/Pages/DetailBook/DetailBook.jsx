@@ -18,6 +18,7 @@ const DetailBook = () => {
 
     return (
         <>
+        <h1>Detalle del Libro</h1>
         {book && (
   <DetailView
     key={book.id}
