@@ -1,6 +1,19 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import logo from '../../assets/images/logo.png'
+import React from 'react';
+
+import {
+  AppBar,
+  Container,
+  Toolbar,
+  IconButton,
+  Box,
+  Typography,
+  Button,
+  Tooltip,
+  Avatar,
+  Menu,
+  MenuItem
+} from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
 import './NavBar.style.css'
 
 const pages = ['Products', 'Pricing', 'Blog'];
@@ -29,7 +42,7 @@ function NavBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+       
           <Typography
             variant="h6"
             noWrap
@@ -84,7 +97,7 @@ function NavBar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+        
           <Typography
             variant="h5"
             noWrap
