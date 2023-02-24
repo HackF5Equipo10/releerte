@@ -20,8 +20,7 @@ function Product() {
 
   return (
     <>   
-      <Typography variant="h3" sx={{ mr: 1, mb: 5}}>Mi Cesta </Typography>
-   
+  <Typography variant="h3" sx={{ mr: 1, mb: 5}}>Mi Cesta </Typography>
     <TableContainer>
       <Table>
         <TableHead>
